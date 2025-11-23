@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 200px;
+    margin: 0;
     padding: 0;
     background: #f5f5f5;
 }
@@ -24,6 +24,7 @@ main {
     flex-direction:row;
     flex-wrap:wrap;
     justify-content:space-around;
+    margin: 100px;
 }
 .other-about {
     display: flex;
@@ -31,5 +32,6 @@ main {
     flex-direction:row-reverse;
     flex-wrap:wrap;
     justify-content:space-around;
+    margin: 100px;
 }
 
