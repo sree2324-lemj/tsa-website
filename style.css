@@ -24,7 +24,6 @@ main {
     flex-direction:row;
     flex-wrap:wrap;
     justify-content:space-around;
-    margin: 100px;
 }
 .other-about {
     display: flex;
@@ -32,6 +31,5 @@ main {
     flex-direction:row-reverse;
     flex-wrap:wrap;
     justify-content:space-around;
-    margin: 100px;
 }
 
