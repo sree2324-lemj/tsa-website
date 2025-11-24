@@ -20,9 +20,10 @@ main {
 }
 .about {
     display: flex;
-    flex-direction:row;
+    flex-direction:column;
     flex-wrap:wrap;
-    justify-content:space-between;
+    align-content:space-between;
 }
+
 
 
