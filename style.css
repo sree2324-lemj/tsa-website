@@ -28,6 +28,13 @@ article {
     font-size:28px;
     text-align: left;
 }
+nav {
+    background: #003e7a;
+    width: 200px;
+    height: 100%;
+    border-right: #d57146;
+}
+
 
 
 
