@@ -24,7 +24,7 @@ article {
 .sub-header {
     padding-left: 150px;   
 }
-header h1{
+header.sub-header h1{
     font-size:28px;
     text-align: left;
 }
