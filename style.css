@@ -32,8 +32,9 @@ nav {
     display: inline-block;
     background: #003e7a;
     width: 200px;
-    height: 100%;
     border-right: #d57146;
+    flex-grow: 1;
+    overflow-y: auto;
 }
 
 
