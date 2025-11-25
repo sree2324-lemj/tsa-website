@@ -11,7 +11,7 @@ header, footer {
     padding: 1em 0;
 }
 main {
-    margin-left: 200px;
+    display:inline-block;
     padding: 2em;
     background: #f5f5f5;
     border-radius: 8px;
@@ -29,6 +29,7 @@ article {
     text-align: left;
 }
 nav {
+    display: inline-block;
     background: #003e7a;
     width: 200px;
     height: 100%;
