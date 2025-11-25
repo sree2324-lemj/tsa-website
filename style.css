@@ -11,18 +11,16 @@ header, footer {
     padding: 1em 0;
 }
 main {
-    max-width: 700px;
+    max-width: 1000px;
     margin: 2em auto;
-    background: #fff;
     padding: 2em;
+    background: #f5f5f5;
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.04);
 }
-.about {
-    display: flex;
-    flex-direction:row;
-    flex-wrap:wrap;
-    justify-content:space-around;
+article {
+    border: 1px solid #003e7a;
+    margin: 10px;
 }
 
 
