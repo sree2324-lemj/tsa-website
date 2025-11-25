@@ -12,7 +12,7 @@ header, footer {
 }
 main {
     max-width: 1000px;
-    margin: 2em auto;
+    margin-left: 200px;
     padding: 2em;
     background: #f5f5f5;
     border-radius: 8px;
