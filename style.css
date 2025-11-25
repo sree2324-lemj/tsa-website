@@ -18,8 +18,15 @@ main {
     box-shadow: 0 2px 6px rgba(0,0,0,0.04);
 }
 article {
-    border: 10px solid #003e7a;
-    margin: 50px;
+    border: 5px solid #003e7a;
+    margin: 40px;
+}
+.sub-header {
+    padding-left: 150px;
+    text-align: left;
+}
+header h1{
+    font-size:28px;
 }
 
 
