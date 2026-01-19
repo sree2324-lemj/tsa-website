@@ -8,8 +8,10 @@ header, footer {
     background: #003e7a;
     border-bottom-color:#d57146;
     height:100px;
-    padding:0 40px
-    
+    padding:0 40px    
+}
+header h1{
+    font-size:2.5em
 }
 main {
     margin-left:200px;
@@ -42,7 +44,7 @@ header ul li{
 header ul li a {
   text-decoration: none;
   color:white;
-  font-size:3.5em;
+  font-size:2.5em;
   font-weight:bold
 }
 a.active{
