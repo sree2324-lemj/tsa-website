@@ -6,9 +6,10 @@ body {
 }
 header, footer {
     background: #003e7a;
-    color: #fff;
-    text-align: center;
-    padding: 1em 0;
+    border-bottom-color:#d57146;
+    height:100px;
+    padding:0 40px
+    
 }
 main {
     margin-left:200px;
@@ -35,13 +36,14 @@ header ul {
 }
 header ul li{
     display:inline-block;
-    margin:0 5px
+    margin:0 10px
     
 }
 header ul li a {
   text-decoration: none;
   color:white;
-  font-size:1.5em
+  font-size:3.5em;
+  font-weight:bold
 }
 a.active{
     color:#d57146
@@ -49,7 +51,7 @@ a.active{
 a:hover{
     text-decoration:underline;
     text-decoration-color:#d57146;
-    text-decoration-thickness:3px;
+    text-decoration-thickness:10px;
 }
 
 
