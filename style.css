@@ -27,11 +27,29 @@ article {
     font-size:28px;
     text-align: left;
 }
-nav {
-    background: #003e7a;
-    width: 200px;
-    height:100%;
-    border-right: #d57146;
+header ul {
+    float:right;
+    list-style-type: none; 
+    padding: 0;           
+    margin: 0;  
+}
+header ul li{
+    display:inline-block;
+    margin:0 5px
+    
+}
+header ul li a {
+  text-decoration: none;
+  color:white;
+  font-size:1.5em
+}
+a.active{
+    color:#d57146
+}
+a:hover{
+    text-decoration:underline;
+    text-decoration-color:#d57146;
+    text-decoration-thickness:3px;
 }
 
 
