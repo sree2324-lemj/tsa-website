@@ -8,6 +8,7 @@ header, footer {
     background: #003e7a;
     height:100px;
     width:100%;
+    max-width:100vw;
     padding:0 80px    
 }
 
