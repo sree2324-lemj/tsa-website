@@ -6,8 +6,8 @@ body {
 }
 header, footer {
     background: #003e7a;
-    border-bottom-color:#d57146;
     height:100px;
+    width:100%;
     padding:0 80px    
 }
 
@@ -42,7 +42,7 @@ header ul li{
 header ul li a {
   text-decoration: none;
   color:white;
-  font-size:40px;
+  font-size:32px;
   font-weight:bold
 }
 a.active{
