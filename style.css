@@ -39,6 +39,9 @@ a:hover{
     text-decoration-color:#d57146;
     text-decoration-thickness:0.25em;
 }
+.logo:hover{
+    text-decoration: none
+}
 
 
 
