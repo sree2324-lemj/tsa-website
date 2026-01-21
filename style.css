@@ -11,25 +11,8 @@ header, footer {
     height:100px;
     width:100%;
     max-width:100vw;
-    padding:0 80px    
-}
-
-main {
-    margin-left:200px;
-    background: #f5f5f5;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.04);
-}
-article {
-    border: 5px solid #003e7a;
-    margin: 40px;
-}
-.sub-header {
-    padding-left: 150px;   
-}
-.sub-header h1{
-    font-size:28px;
-    text-align: left;
+    padding:0 80px
+    color:white
 }
 header ul {
     float:right;
@@ -44,7 +27,6 @@ header ul li{
 }
 header ul li a {
   text-decoration: none;
-  color:white;
   font-size:32px;
   font-weight:bold
 }
@@ -54,7 +36,7 @@ a.active{
 a:hover{
     text-decoration:underline;
     text-decoration-color:#d57146;
-    text-decoration-thickness:10px;
+    text-decoration-thickness:0.25em;
 }
 
 
