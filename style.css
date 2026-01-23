@@ -42,6 +42,18 @@ a:hover{
 .logo:hover{
     text-decoration: none
 }
+.resource-page-header{
+    position:relative
+}
+.resource-page-header::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 62, 122, 0.4)
+}
 
 
 
