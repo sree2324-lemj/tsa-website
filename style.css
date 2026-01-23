@@ -15,6 +15,7 @@ header, footer {
     align-content:center;
     color:white
 }
+footer {border-top:3px solid #d57146}
 header ul {
     float:right;
     list-style-type: none; 
@@ -45,11 +46,11 @@ a:hover{
 .resource-page-header{
     background-image:linear-gradient(rgba(0, 62, 122, 0.55),rgba(0, 62, 122, 0.55)),url('lab2.jpg');
     width:100%;
-    min-height:200px;
+    min-height:400px;
     background-blend-mode:multiply;
     background-size:cover;
     background-position:center;
-    padding:50px 0
+    padding:100px 0
 }
 .main-header{
     position:fixed;
@@ -58,12 +59,12 @@ a:hover{
     z-index:1
 }
 .resource-header-text{
-    font-size:48px;
+    font-size:64px;
     font-family:Merriweather;
     font-weight:bold;
     color:white;
     line-height:1.5;
-    width:50%;
+    width:60%;
     margin-left:auto;
     margin-right:auto
 }
