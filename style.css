@@ -50,7 +50,8 @@ a:hover{
     background-blend-mode:multiply;
     background-size:cover;
     background-position:center;
-    padding:100px 0
+    padding:100px 0;
+    align-content:center
 }
 .main-header{
     position:fixed;
