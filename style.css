@@ -40,7 +40,7 @@ a:hover{
     text-decoration-color:#d57146;
     text-decoration-thickness:0.25em;
 }
-.logo:hover{
+.none-effect-link:hover{
     text-decoration: none
 }
 .resource-page-header{
@@ -68,6 +68,20 @@ a:hover{
     width:60%;
     margin-left:auto;
     margin-right:auto
+}
+p {
+   color: #003e7a;
+   font-size:24px
+}
+.learn-more{
+    color:#d57146;
+    font-weight:bold;
+    font-decoration:none
+}
+.logo{
+    font-family:Merriweather,Arial;
+    font-size:40px;
+    display:inline
 }
 
 
