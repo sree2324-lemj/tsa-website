@@ -40,9 +40,6 @@ a:hover{
     text-decoration-color:#d57146;
     text-decoration-thickness:0.25em;
 }
-.none-effect-link:hover{
-    text-decoration: none
-}
 .resource-page-header{
     background-image:linear-gradient(rgba(0, 62, 122, 0.55),rgba(0, 62, 122, 0.55)),url('lab2.jpg');
     width:100%;
@@ -78,12 +75,19 @@ p {
 .learn-more{
     color:#d57146;
     font-weight:bold;
-    text-decoration:none;
 }
 .logo{
     font-family:Merriweather,Arial;
     font-size:40px;
-    display:inline
+    display:inline;
+    color:white
+}
+a,a:link,a:visited,a:active {
+   text-decoration:none;
+   color:white
+}
+.no-hover:hover{
+    text-decoration:none
 }
 
 
