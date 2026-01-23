@@ -43,22 +43,26 @@ a:hover{
     text-decoration: none
 }
 .resource-page-header{
-    position:relative
-}
-.resource-page-header::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 62, 122, 0.55)
+    background-image:linear-gradient(rgba(0, 62, 122, 0.55),rgba(0, 62, 122, 0.55)),url('lab2.jpg');
+    width:100%;
+    min-height:200px;
+    background-blend-mode:multiply;
+    background-size:cover;
+    background-position:center;
+    padding:50px 0
 }
 .main-header{
     position:fixed;
     border-bottom:3px solid #d57146;
     top:0;
     z-index:1
+}
+.resource-header-text{
+    font-size:48px;
+    font-family:Merriweather;
+    font-weight:bold;
+    color:white;
+    line-height:1.5
 }
 
 
