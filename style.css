@@ -41,7 +41,6 @@ a:hover{
     text-decoration-thickness:0.25em;
 }
 .resource-page-header{
-    background-image:linear-gradient(rgba(0, 62, 122, 0.55),rgba(0, 62, 122, 0.55)),url('lab2.jpg');
     width:100%;
     min-height:400px;
     background-blend-mode:multiply;
