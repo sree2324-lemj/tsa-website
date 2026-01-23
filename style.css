@@ -71,7 +71,9 @@ a:hover{
 }
 p {
    color: #003e7a;
-   font-size:24px
+   font-size:24px;
+   margin-top:50px;
+   margin-bottom:50px
 }
 .learn-more{
     color:#d57146;
