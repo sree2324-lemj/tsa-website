@@ -7,14 +7,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
 </head>
-<Cary arts center is the hub of arts activity in cary. its history of education started started back in the 1870's when the town of cary founder opend cary academy. Cary arts center has many diffrent programs including Marvelous music series and Applause! Cary youth theatre. There are many things that you can learn at Cary arts academy including some activites that arent usually associated with "Arts" this includes Ceramics, Glass, Woodworking, Textiles, and even Metal and Jewlery.   >
+<!-- Cary arts center is the hub of arts activity in cary. its history of education started started back in the 1870's when the town of cary founder opend cary academy. Cary arts center has many diffrent programs including Marvelous music series and Applause! Cary youth theatre. There are many things that you can learn at Cary arts academy including some activites 
+that arent usually associated with "Arts" this includes Ceramics, Glass, Woodworking, Textiles, and even Metal and Jewlery -->
     <header class="main-header">
         <h1 class="logo"><a class="no-hover" href="index.html">CARY RESOURCE HUB</a></h1>
         <ul>
             <li><a href="#">Highlights</a></li>
             <li><a href="#">Feedback</a></li>
         </ul>
-    </Activites in Cary Arts Center>
+    </header>
   
     <div class="resource-page-header" style="background-image:linear-gradient(rgba(0, 62, 122, 0.55),rgba(0, 62, 122, 0.55)),url('lab2.jpg')">
       <!-- At the end of the above line, switch lab2.jpg with the name of your image -->
