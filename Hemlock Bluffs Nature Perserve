@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <title>Resource Name</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <h1 class="logo"><a class="no-hover" href="index.html">CARY RESOURCE HUB</a></h1>
+        <ul>
+            <li><a href="#">Highlights</a></li>
+            <li><a href="#">Feedback</a></li>
+        </ul>
+    </header>
+  
+    <div class="resource-page-header" style="background-image:linear-gradient(rgba(0, 62, 122, 0.55),rgba(0, 62, 122, 0.55)),url('nature.jpg')">
+      <!-- At the end of the above line, switch lab2.jpg with the name of your image -->
+      <p class="resource-header-text">Hemlock Bluffs Nature Perserve</p>
+    </div>
+    <div style="padding:0 100px">
+      <p>Hemlock Bluffs Nature Perserve located in cary in one of the few state nature perserves in NC. Although its in cary its plant life are usally found in the mountain region. Hemlockk Bluffs is also home to many diffrent animals including reptiles, amphibians, mammals, insects and even arachnids. Hemlock Bluffs is also importantly a corridor for a great diversity of migrant birds that compliment many resident species. </p>
+      <p>Hemlock Bluffs also offers a great nature education program for all ages, These programs inlcude Nature walks, Outdoor exploration, crafts and other active learning opportunites. Hemlocck Bluffs also has custom programs for scout troops, birthdays, and even school clubs. Hemlocck bluffs also offers a kids nature trail. Its small but beloved by all the kids that decide to go there. </p>
+      <p class="learn-more"><a href="https://www.hemlockbluffs.org/hemlock-bluffs-nature-preserve.html">Learn More</a></p>
+      <!-- Replace the hash above with the entire link of the resource's website. To get the entire link, click the link in the browser twice and copy the whole thing -->
+    </div>
+  <footer>
+    2025 Green Level High TSA Chapter 25-26
+  </footer>
+
+  
+</body>
+</html>
+    
