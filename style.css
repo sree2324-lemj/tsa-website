@@ -28,17 +28,11 @@ header ul li{
     
 }
 header ul li a {
-  text-decoration: none;
   font-size:32px;
   font-weight:bold
 }
 a.active{
     color:#d57146
-}
-a:hover{
-    text-decoration:underline;
-    text-decoration-color:#d57146;
-    text-decoration-thickness:0.25em;
 }
 .resource-page-header{
     width:100%;
@@ -87,6 +81,11 @@ a:link,a:visited,a:active {
 }
 .no-hover:hover{
     text-decoration:none
+}
+a:hover{
+    text-decoration:underline;
+    text-decoration-color:#d57146;
+    text-decoration-thickness:0.25em;
 }
 
 
