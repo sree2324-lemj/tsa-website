@@ -81,7 +81,7 @@ p {
     display:inline;
     color:white
 }
-a,a:link,a:visited,a:active {
+a:link,a:visited,a:active {
    text-decoration:none;
    color:inherit
 }
