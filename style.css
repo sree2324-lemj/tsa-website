@@ -88,7 +88,7 @@ a:hover{
     text-decoration-thickness:0.25em;
 }
 .submit-button{
-    border:5px solid #d57146;
+    border:3px solid #d57146;
     background-color:#003e7a;
     color:#d57146;
     padding:25px 50px;
@@ -98,7 +98,8 @@ a:hover{
     align-items:center;
     font-size:20px;
     margin-top:50px;
-    margin-bottom:50px
+    margin-bottom:50px;
+    border-radius:5px
 }
 .feedback-box{
     border:3px solid #d57146;
