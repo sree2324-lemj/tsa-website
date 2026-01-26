@@ -87,6 +87,17 @@ a:hover{
     text-decoration-color:#d57146;
     text-decoration-thickness:0.25em;
 }
+.submit-button{
+    border:5px solid #d57146;
+    background-color:#003e7a;
+    color:#d57146;
+    width:150px;
+    height:100px;
+    font-weight:bold;
+    display:flex;
+    justify-content:center;
+    align-items:center
+}
 
 
 
