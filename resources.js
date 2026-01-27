@@ -44,6 +44,7 @@ class Resources {
   #getSelectedOption() {
     const selectElement = document.getElementById("js-resource-filter");
     this.#filterOption = selectElement.value;
+    console.log(this.#filterOption)
   }
 }
 const rSources = new Resources();
