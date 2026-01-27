@@ -5,7 +5,7 @@ class Resources {
 
   inputHtml() {
     this.#filterResources();
-    for (let i=0;i<20;i++) {
+    for (let i=0;i<this.#filteredList.length;i++) {
       const resourceElement = document.getElementById('r'+i);
       const resourceContent = `
         <div style="background-image:linear-gradient(rgba(0, 62, 122, 0.75),rgba(0, 62, 122, 0.75)),url(${this.#filteredList[i][2]});
