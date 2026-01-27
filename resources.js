@@ -39,6 +39,7 @@ class Resources {
     const response = await fetch('resource-data.csv');
     const text = await response.text();
     this.#rows = text.split('\n').map(row=>row.split(',')).slice(1); 
+    console.log(this.#rows);
   }
   #getSelectedOption() {
     const selectElement = document.getElementById("js-resource-filter");
