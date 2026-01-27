@@ -112,6 +112,21 @@ a:hover{
     display:flex;
     align-content:flex-start
 }
+.resource-link-pic-box{
+    height:150px;
+    width:100%;
+    position:relative
+}
+.resource-link-pic-box::before{
+    content:"";
+    position:absolute;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+    background-color: rgba(0,62,122,0.7)
+    
+}
 
 
 
