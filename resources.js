@@ -17,11 +17,10 @@ class Resources {
           background-position:center;"></div>
         <p style="font-size:14px;width:70%;margin:auto auto"><a href=${this.#filteredList[i][1]}>${this.#filteredList[i][0]}</a></p>
         </div>
-      `;
-      resourceGridElement = document.getElementById('js-resource-grid');
-      resourceGridElement.innerHTML = resourceGrid;
-      
+      `;  
     }
+    resourceGridElement = document.getElementById('js-resource-grid');
+    resourceGridElement.innerHTML = resourceGrid;
   }
   
   async #filterResources() {
