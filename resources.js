@@ -19,7 +19,7 @@ class Resources {
         </div>
       `;  
     }
-    resourceGridElement = document.getElementById('js-resource-grid');
+    const resourceGridElement = document.getElementById('js-resource-grid');
     resourceGridElement.innerHTML = resourceGrid;
   }
   
