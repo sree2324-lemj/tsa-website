@@ -1,8 +1,8 @@
 resource name,resource file name,image file name,categories that are also seperated by commas\n
-Cary Arts Center,Cary-Arts-Center.html,crazy-arts.jpg,Arts/n
-Cary Teen Council,Cary-Teen-Council.html,donations.png,Community+Education/n
-Hemlock Bluffs Nature Perserve,Hemlock-Bluffs-Nature-Perserve.html,nature.jpg,Environment/n
-Cary Players Community Theatre Company,cary-players-community-theatre-company.html,chair.jpg,Arts/n
-Cary Academy,cary-academy.html,apple.jpg,Community+Education/n
-Wake County Public School System,wake-county-public-school-system.html,school.jpg,Community+Education/n
-Cary Police Department,cary-department.html,police.jpg,Government/n
+Cary Arts Center,Cary-Arts-Center.html,crazy-arts.jpg,arts/n
+Cary Teen Council,Cary-Teen-Council.html,donations.png,community/n
+Hemlock Bluffs Nature Perserve,Hemlock-Bluffs-Nature-Perserve.html,nature.jpg,environment/n
+Cary Players Community Theatre Company,cary-players-community-theatre-company.html,chair.jpg,arts/n
+Cary Academy,cary-academy.html,apple.jpg,community/n
+Wake County Public School System,wake-county-public-school-system.html,school.jpg,community/n
+Cary Police Department,cary-department.html,police.jpg,government/n
