@@ -40,7 +40,7 @@ class Resources {
     const reader = new FileReader();
     reader.onlodad = (e) => {
       const text = e.target.results;
-      this.#rows = text.split('\n').map(row=>row.split(',')); 
+      this.#rows = text.split('\n').map(row=>row.split(',')).slice(1); 
     };
   }
   #getSelectedOption() {
