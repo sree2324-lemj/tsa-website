@@ -19,20 +19,33 @@
     <div style="padding:100px 100px;width:60%">
       <p style="font-size:64px;font-family:Merriweather;font-weight:bold">Feedback</p>
       <p style="width:100%">We would love to hear your comments on our webstie. Cary is a rich community with many resources that aren't listed on this website so we are ready to implement the resources you recommend. We are also seeking out any of your suggestions on the website infrastructure. Write your comments in the box below and hit submit when finished.</p>
-      <input id="feedback-input" class="feedback-box" placeholder="Comments...">
-      <button class="submit-button" onclick="submitReview()">Submit</button>
+      <input id="js-feedback" class="feedback-box" placeholder="Comments...">
+      <button class="submit-button" id="js-submit-button">Submit</button>
       
     </div>
     <footer>
       2025 Green Level High TSA Chapter 25-26
     </footer>
-  <!-- <script>
-    function submitReview() {
-       const inputElement = document.getElementById("feedback-input");
-       const userComment = inputElement.value;
-       inputElement.value = '';
-       
+  <script>
+    const buttonElement = document.getElementById('js-submit-button');
+    buttonElement.addEventListener(click, () => {
+      getFeedback();
+    })
+
+    function getFeedback() {
+      const feedback = document.getElementById('js-feedback').value;
+      postFeedback(feedback);
     }
-  </script> -->
+
+    async function postFeedback(feedback) {
+      await fetch('backend.js', {
+        method:'POST',
+        'Content-type':'text/plain',
+        body:feedback,
+      });
+
+    }
+    
+  </script>
 </body>
 </html>
