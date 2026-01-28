@@ -36,17 +36,15 @@ class Search {
     }
     this.#getSearchText();
     
-    if this.#searchText==='' {
-      this.#results = False;
+    if (this.#searchText==='') {
+      this.#results = false;
       return;
     }
     
-    this.#results = this.#rows.filter(row => {
-      row[0].toLowerCase().includes(this.#searchText.toLowerCase());
-    });
+    this.#results = this.#rows.filter(row => row[0].toLowerCase().includes(this.#searchText.toLowerCase()));
     
-    if this.#results.length === 0 {
-      this.#results = False;
+    if (this.#results.length === 0) {
+      this.#results = false;
     }
   }
   
