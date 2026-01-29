@@ -67,7 +67,7 @@
       if (!rating) {
         rating = 0;
       }
-      await fetch('/save', {
+      await fetch('/feedback', {
         method:'POST',
         'Content-type':'application/json',
         body:JSON.stringify({
