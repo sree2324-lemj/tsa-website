@@ -146,22 +146,23 @@ a:hover{
     border-left:3px solid #d57146;
     border-bottom:3px solid #d57146;
     color:#003e7a;
-    font-size:20px;
-    height:25px
+    font-size:36px;
+    height:48px
 }
 .search-button{
     border-top:3px solid #d57146;
     border-right:3px solid #d57146;
     border-bottom:3px solid #d57146;
-    font-size:20px;
-    height:25px;
+    font-size:36px;
+    height:48px;
     color:#d57146;
     background-color:#003e7a;
     display:flex;
     justify-content:center;
     align-items:center;
     cursor:pointer;
-    font-weight:bold;   
+    font-weight:bold;
+    width:30%   
 }
 
 
