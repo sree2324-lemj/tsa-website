@@ -1,13 +1,14 @@
 const express = require('express');
 const fs = require('fs');
 const path = require('path');
-
+const cors = require('cors');
 const app = express();
 const PORT = 3000;
 
 // Middleware for plain text and static file serving
 app.use(express.text()); 
 app.use(express.static(__dirname));
+app.use(cors())
 
 
 app.post('/save', (req, res) => {
