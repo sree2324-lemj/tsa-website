@@ -12,12 +12,12 @@ app.use(express.static(__dirname));
 
 app.post('/save', (req, res) => {
     const userInput = req.body; 
-    const filePath = path.join(__dirname, 'user_data.txt');
+    const filePath = path.join(__dirname, 'feedback.txt');
 
     // Appending string to file asynchronously
     fs.appendFile(filePath, userInput + '\n', (err) => {
         if (err) return res.status(500).send('Error writing to file');
-        res.send('Saved to user_data.txt');
+        res.send('Saved to feedback.txt');
     });
 });
 
