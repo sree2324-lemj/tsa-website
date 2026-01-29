@@ -140,7 +140,29 @@ a:hover{
     border-radius:20px;
     cursor:pointer;
 }
-
+.search-bar{
+    width:75%;
+    border-top:3px solid #d57146;
+    border-left:3px solid #d57146;
+    border-bottom:3px solid #d57146;
+    color:#003e7a;
+    font-size:20px;
+    height:25px
+}
+.search-button{
+    border-top:3px solid #d57146;
+    border-right:3px solid #d57146;
+    border-bottom:3px solid #d57146;
+    font-size:20px;
+    height:25px;
+    color:#d57146;
+    background-color:#003e7a;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+    font-weight:bold;   
+}
 
 
 

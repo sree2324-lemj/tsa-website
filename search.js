@@ -19,7 +19,7 @@ class Search {
     } else {
       for (let i=0;i<this.#results.length;i++) {
         resultsBox += `
-          <div style="border-bottom:3px solid #d57146">
+          <div style="border-bottom:3px solid #d57146;padding:0 100px">
             <p style="font-size:64px;font-weight:bold"><a href=${this.#results[i][1]}>${this.#results[i][0]}</a></p>
             <p>Category: ${this.#results[i][3]}</p>
           </div>
