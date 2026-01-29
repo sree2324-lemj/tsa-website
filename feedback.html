@@ -12,14 +12,15 @@
     <header class="main-header">
         <h1 class="logo"><a class="no-hover" href="index.html">CARY RESOURCE HUB</a></h1>
         <ul>
-            <li><a href="feedback.html" class="active">Feedback</a></li>
-            <li><a href="#">Search</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="feedback.html" style="color:#d57146">Feedback</a></li>
+            <li><a href="search.html">Search</a></li>
         </ul>
     </header>
     <div style="padding:100px 100px;width:60%">
       <p style="font-size:64px;font-family:Merriweather;font-weight:bold">Feedback</p>
       <p style="width:100%">We would love to hear your comments on our webstie. Cary is a rich community with many resources that aren't listed on this website so we are ready to implement the resources you recommend. We are also seeking out any of your suggestions on the website infrastructure. Write your comments in the box below and hit submit when finished.</p>
-      <input id="js-feedback" class="feedback-box" placeholder="Comments...">
+      <textarea id="js-feedback" class="feedback-box" placeholder="Comments..."></textarea>
       <button class="submit-button" id="js-submit-button">Submit</button>
       
     </div>
@@ -28,17 +29,22 @@
     </footer>
   <script>
     const buttonElement = document.getElementById('js-submit-button');
-    buttonElement.addEventListener(click, () => {
+    buttonElement.addEventListener('click', () => {
       getFeedback();
     })
 
     function getFeedback() {
-      const feedback = document.getElementById('js-feedback').value;
+      const feedBackElement = document.getElementById('js-feedback');
+      const feedback = feedBackElement.value;
+      alert("Feedback Submitted");
+      feedBackElement.value = '';
       postFeedback(feedback);
+      
     }
 
     async function postFeedback(feedback) {
-      await fetch('backend.js', {
+      console.log("calling the fetch method to route to save on the server")
+      await fetch('/save', {
         method:'POST',
         'Content-type':'text/plain',
         body:feedback,
@@ -49,3 +55,4 @@
   </script>
 </body>
 </html>
+
