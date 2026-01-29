@@ -14,7 +14,7 @@ class Resources {
     let resourceGrid = ``
     for (let i=0;i<this.#filteredList.length;i++) {
       resourceGrid += `
-        <div style="border:6px solid #d57146;width:300px;height:250px; margin:50px">
+        <div style="border:6px solid #d57146;width:300px;height:250px; margin:25px">
           <div class="resource-link-pic-box">
             <img src=${this.#filteredList[i][2]} style="width:100%;height:100%;object-fit:cover;object-position:center">
           </div>
