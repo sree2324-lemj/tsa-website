@@ -5,6 +5,7 @@ body {
     margin: 0;
     padding-top: 100px;
     background: #f5f5f5;
+    position:relative
 }
 header, footer {
     background: #003e7a;
@@ -15,7 +16,7 @@ header, footer {
     align-content:center;
     color:white
 }
-footer {border-top:3px solid #d57146}
+footer {border-top:3px solid #d57146;margin-top:25px}
 header ul {
     float:right;
     list-style-type: none; 
@@ -99,18 +100,18 @@ a:hover{
     font-size:20px;
     margin-top:50px;
     margin-bottom:50px;
-    border-radius:5px
+    border-radius:5px;
+    cursor:pointer
 }
 .feedback-box{
     border:3px solid #d57146;
-    min-height:200px;
     width:100%;
+    min-height: 200px; /* Optional: Sets a minimum visible height */
+    resize:vertical;  /* Hides the scrollbar unless max-height is reached */
     color:#898a8d;
     font-size:20px;
     margin-top:50px;
     margin-bottom:50px;
-    display:flex;
-    align-content:flex-start
 }
 .resource-link-pic-box{
     height:150px;
