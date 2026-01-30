@@ -150,16 +150,12 @@ a:hover{
     height:48px
 }
 .search-button{
-    border-top:3px solid #d57146;
-    border-right:3px solid #d57146;
-    border-bottom:3px solid #d57146;
+    border:3px solid #d57146;
     font-size:36px;
     height:48px;
     color:#d57146;
     background-color:#003e7a;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    text-align: center;
     cursor:pointer;
     font-weight:bold;
     width:25%   
