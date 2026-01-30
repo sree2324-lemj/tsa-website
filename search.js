@@ -15,7 +15,7 @@ class Search {
     await this.#getSearchResults();
     let resultsBox = ``;
     if (!this.#results) {
-      resultsBox = `<p style="font-size:64px;font-weight:bold;width:70%;margin-left:auto;margin-right:auto;text-align:center">No Results For ${this.#searchText}</p>`;
+      resultsBox = `<p style="font-size:64px;font-weight:bold;width:70%;margin-left:auto;margin-right:auto;text-align:center">No Results For '${this.#searchText}'</p>`;
     } else {
       for (let i=0;i<this.#results.length;i++) {
         resultsBox += `
