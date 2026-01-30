@@ -18,7 +18,7 @@
     </header>
     <div style="padding:100px 100px;width:60%">
       <p style="font-size:64px;font-family:Merriweather;font-weight:bold">Feedback</p>
-      <p style="width:100%">We would love to hear your comments on our webstie. Cary is a rich community with many resources that aren't listed on this website so we are ready to implement the resources you recommend. We are also seeking out any of your suggestions on the website infrastructure. Write your comments in the box below and hit submit when finished.</p>
+      <p style="width:100%">We would love to hear your review of our webstie. Rate the website out of 5 stars and then leave your feedback. Cary is a rich community with many resources that aren't listed on this website so we are ready to implement the resources you recommend. We are also seeking out any of your suggestions on the website infrastructure.</p>
       
       <span id="0" onclick="Rate(1)" style="font-size:50px;color:white;-webkit-text-stroke:2px #d57146;cursor:pointer">&#9733;</span>
       <span id="1" onclick="Rate(2)" style="font-size:50px;color:white;-webkit-text-stroke:2px #d57146;cursor:pointer">&#9733;</span>
@@ -53,7 +53,11 @@
       const feedBackElement = document.getElementById('js-feedback');
       let feedback = feedBackElement.value;
       if (feedback.length === 0) {
-        alert("Please enter feedback before submitting.");
+        alert("Please leave your feedback before submitting.");
+        return;
+      }
+      if (!rating) {
+        alert("Please leave a rating before submitting.");
         return;
       }
       alert("Feedback Submitted");
@@ -64,9 +68,6 @@
 
     async function postFeedback(feedback) {
       console.log("calling the fetch method to route to save on the server")
-      if (!rating) {
-        rating = 0;
-      }
       await fetch('/feedback', {
         method:'POST',
         'Content-type':'application/json',
