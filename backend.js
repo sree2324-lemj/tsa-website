@@ -1,10 +1,12 @@
 const express = require('express');
 const fs = require('fs');
 const path = require('path');
+const cors = require('cors');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Middleware for plain text and static file serving
+app.use(cors())
 app.use(express.text()); 
 app.use(express.static(__dirname));
 
