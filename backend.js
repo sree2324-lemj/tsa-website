@@ -10,10 +10,10 @@ app.use(express.static(__dirname));
 
 
 
-app.post('/feedback', (req, res) => {
+app.post('/feedback2', (req, res) => {
     const userFeedback = req.body; 
     const filePath = path.join(__dirname, 'feedback.txt');
-
+    console.log("feedback2 called and filepath set")
     // Appending string to file asynchronously
     fs.appendFile(filePath, userFeedback + '\n', (err) => {
         if (err) return res.status(500).send('Error writing to file');
