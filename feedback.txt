@@ -1,3 +1,0 @@
-{"rating":3,"feedback":"Could have some more elements and resources"}
-{"rating":5,"feedback":"Is this actually working"}
-{"rating":5,"feedback":"check 2:00pm"}
