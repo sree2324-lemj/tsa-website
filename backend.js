@@ -21,6 +21,7 @@ app.post('/feedback2', (req, res) => {
         if (err) return res.status(500).send('Error writing to file');
         res.send('Saved to feedback.txt');
     });
+    console.log(fs.readFile(filePath))
 });
 
 app.listen(PORT, () => {
