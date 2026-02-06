@@ -19,15 +19,13 @@ app.post('/feedback2', (req, res) => {
     // Appending string to file asynchronously
     fs.appendFile(filePath, userFeedback + '\n', (err) => {
         if (err) return res.status(500).send('Error writing to file');
-        res.send('Saved to feedback.txt');
-    });
-    console.log("before reading file")
-    fs.readFile(filePath,'utf8',(err,data)=>{
-        console.log('during reading');
-        if (err) throw err;
-        console.log(data);
-        console.log('after logging data');
-    })
+        console.log("before reading file")
+        fs.readFile(filePath,'utf8',(err,data)=>{
+            if (err) console.error(err);
+            console.log('file content:',data);
+            res.send('Saved to feedback.txt');
+        })
+    }); 
 });
 
 app.listen(PORT, () => {
