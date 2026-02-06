@@ -71,11 +71,8 @@
       console.log("calling the fetch method to route to save on the server")
       await fetch('/feedback2', {
         method:'POST',
-        'Content-type':'application/json',
-        body:JSON.stringify({
-          'rating': rating,
-          'feedback': feedback
-        })
+        'Content-type':'text/plain',
+        body:`${rating},${feedback}`
       });
 
     }
