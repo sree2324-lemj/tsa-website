@@ -19,14 +19,14 @@ app.post('/feedback2', (req, res) => {
     // Appending string to file asynchronously
     fs.appendFile(filePath, userFeedback + '\n', (err) => {
         if (err) { 
-            console.log('Error writing to file')
-            return
-        };
+            console.log('Error writing to file');
+            return;
+        }
         res.send('Saved to feedback.txt');
     });
     fs.readFile(filePath,'utf8',(err,data)=>{
         if (err) throw err;
-        console.log(data)
+        console.log(data);
     })
 });
 
