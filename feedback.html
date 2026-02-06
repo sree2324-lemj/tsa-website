@@ -36,6 +36,7 @@
     </footer>
   <script>
     let rating;
+    const fs = require("fs")
     const buttonElement = document.getElementById('js-submit-button');
     buttonElement.addEventListener('click', () => {
       getFeedback();
@@ -74,6 +75,11 @@
         'Content-type':'text/plain',
         body:`${rating},${feedback}`
       });
+      fs.readFile(filePath,'utf8',(err,data)=>{
+        console.log('during reading');
+        if (err) throw err;
+        console.log(data);
+    })
 
     }
     
