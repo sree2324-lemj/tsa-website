@@ -24,7 +24,9 @@ app.post('/feedback2', (req, res) => {
         }
         res.send('Saved to feedback.txt');
     });
+    console.log("before reading file")
     fs.readFile(filePath,'utf8',(err,data)=>{
+        console.log('during reading')
         if (err) throw err;
         console.log(data);
     })
