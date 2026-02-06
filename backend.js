@@ -26,9 +26,10 @@ app.post('/feedback2', (req, res) => {
     });
     console.log("before reading file")
     fs.readFile(filePath,'utf8',(err,data)=>{
-        console.log('during reading')
+        console.log('during reading');
         if (err) throw err;
         console.log(data);
+        console.log('after logging data');
     })
 });
 
