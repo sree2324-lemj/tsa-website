@@ -198,7 +198,7 @@ a:hover{
 .quarter-circle::before{
     content:"";
     float:right;
-    width:50%;
+    width:60%;
     height:50%;
     shape-outside: radial-gradient(ellipse at bottom left, transparent 0%, black 100%)
 }
