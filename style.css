@@ -191,7 +191,8 @@ a:hover{
     width:40%;
     height:100%;
     border-right:3px solid #d57146;
-    border-top:3px solid #d57146
+    border-top:3px solid #d57146;
+    padding-left:10px
 }
 .quarter-circle::before{
     content:"";
