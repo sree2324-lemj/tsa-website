@@ -185,14 +185,15 @@ a:hover{
     font-family:Merriweather;
     font-weight:bold;
     margin:0;
-    font-size:56px;
+    font-size:50px;
     background-color:#003e7a;
     border-radius:0 100% 0 0;
     width:40%;
     height:100%;
     border-right:3px solid #d57146;
     border-top:3px solid #d57146;
-    padding-left:10px
+    padding-left:10px;
+    display:inline-block
 }
 .quarter-circle::before{
     content:"";
