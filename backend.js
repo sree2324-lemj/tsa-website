@@ -2,6 +2,7 @@ const express = require('express');
 const fs = require('fs');
 const path = require('path');
 const cors = require('cors');
+const { flushCompileCache } = require('module');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
@@ -28,9 +29,23 @@ app.post('/feedback2', (req, res) => {
     }); 
 });
 
-app.post('/resourcelikes', (req,res) => {
-    
-}
+app.post('/likes', (req,res) => {
+    const resourceName = req.body;
+    const filePath = path.join(__dirname, 'resource_likes.json');
+    fs.readFile(filePath, 'utf8', (err, data) => {
+        if (err) return res.status(500).send('Error reading file');
+        likesData = JSON.parse(data);
+        if (likesData[resourceName]) {
+            likesData[resourceName] += 1;
+        } else {
+            likesData[resourceName] = 1;
+        }
+        fs.writeFile(filePath, JSON.stringify(likesData), (err) => {
+            if (err) return res.status(500).send('Error writing to file');
+            res.send(`Liked ${resourceName}`);
+        });
+    });
+});
 
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
