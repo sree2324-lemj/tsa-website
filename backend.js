@@ -28,6 +28,10 @@ app.post('/feedback2', (req, res) => {
     }); 
 });
 
+app.post('/resourcelikes', (req,res) => {
+    
+}
+
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
 });
