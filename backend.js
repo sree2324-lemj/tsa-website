@@ -2,7 +2,7 @@ const express = require('express');
 const fs = require('fs');
 const path = require('path');
 const cors = require('cors');
-const { flushCompileCache } = require('module');
+//const { flushCompileCache } = require('module');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
@@ -35,9 +35,8 @@ app.post('/likes', (req,res) => {
     fs.readFile(filePath, 'utf8', (err, data) => {
         if (err) return res.status(500).send('Error reading file');
         const likesData = JSON.parse(data);
-        if (likesData[resourceName]) {
-            likesData[resourceName] += 1; 
-        } 
+        likesData[resourceName] += 1; 
+        
         fs.writeFile(filePath, JSON.stringify(likesData), (err) => {
             if (err) return res.status(500).send('Error writing to file');
             res.send(`Liked ${resourceName}`);
