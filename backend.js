@@ -36,10 +36,8 @@ app.post('/likes', (req,res) => {
         if (err) return res.status(500).send('Error reading file');
         likesData = JSON.parse(data);
         if (likesData[resourceName]) {
-            likesData[resourceName] += 1;
-        } else {
-            likesData[resourceName] = 1;
-        }
+            likesData[resourceName] += 1; 
+        } 
         fs.writeFile(filePath, JSON.stringify(likesData), (err) => {
             if (err) return res.status(500).send('Error writing to file');
             res.send(`Liked ${resourceName}`);

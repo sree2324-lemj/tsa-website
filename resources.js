@@ -11,6 +11,7 @@ class Resources {
   }
   async inputHtml() {
     await this.#filterResources();
+    const resourceLikes = await this.#getLikes();
     let resourceGrid = ``
     for (let i=0;i<this.#filteredList.length;i++) {
       resourceGrid += `
@@ -18,8 +19,21 @@ class Resources {
           <div class="resource-link-pic-box">
             <img src=${this.#filteredList[i][2]} style="width:100%;height:100%;object-fit:cover;object-position:center">
           </div>
-          <div display:flex;align-items:center;height:100px>
+          <div display:flex;align-content:space-around;height:100px>
             <p style="font-size:20px;width:70%;margin:auto auto;text-align:center;font-weight:bold;"><a href=${this.#filteredList[i][1]}>${this.#filteredList[i][0]}</a></p>
+            <div style="float:right;margin-right:10px;">
+              <button style="border:2px solid white;color:#d57146;padding:5px;" onclick="() => {
+                fetch('/likes',{
+                method:'POST',
+                headers:{'Content-Type':'text/plain'},
+                body:'${this.#filteredList[i][1]}'
+                });
+                alert('Liked ${this.#filteredList[i][0]}');
+              }">
+              &#128077;
+              </button>
+              <span style="margin-top:5px;margin-right:10px;color:white">${resourceLikes[this.#filteredList[i][1]]}</span>
+            </div>
           </div>
         </div>
       `;  
@@ -53,6 +67,11 @@ class Resources {
     const selectElement = document.getElementById("js-resource-filter");
     this.#filterOption = selectElement.value;
     console.log(this.#filterOption)
+  }
+  async #getLikes() {
+    const response = await fetch('resource_likes.json');
+    const data = await response.json();
+    return data;
   }
 }
 const rSources = new Resources();
