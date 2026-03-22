@@ -12,7 +12,7 @@ class Resources {
   }
   async inputHtml() {
     await this.#filterResources();
-    const resourceLikes = await this.#getLikes();
+    let resourceLikes = await this.#getLikes();
     let resourceGrid = ``
     for (let i=0;i<this.#filteredList.length;i++) {
       resourceGrid += `
