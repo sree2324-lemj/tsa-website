@@ -22,14 +22,7 @@ class Resources {
           <div display:flex;align-content:space-around;height:100px>
             <p style="font-size:20px;width:70%;margin:auto auto;text-align:center;font-weight:bold;"><a href=${this.#filteredList[i][1]}>${this.#filteredList[i][0]}</a></p>
             <div style="float:right;margin-right:10px;">
-              <button style="border:2px solid white;color:#d57146;padding:5px;" onclick="() => {
-                fetch('/likes',{
-                method:'POST',
-                headers:{'Content-Type':'text/plain'},
-                body:'${this.#filteredList[i][1]}'
-                });
-                alert('Liked ${this.#filteredList[i][0]}');
-              }">
+              <button style="border:2px solid white;color:#d57146;padding:5px;" onclick="fetch('/likes', { method:'POST', headers:{'Content-Type':'text/plain'}, body:'${this.#filteredList[i][1]}' }); alert('Liked ${this.#filteredList[i][0]}');">
               &#128077;
               </button>
               <span style="margin-top:5px;margin-right:10px;color:white">${resourceLikes[this.#filteredList[i][1]]}</span>
