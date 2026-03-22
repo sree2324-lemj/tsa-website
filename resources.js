@@ -1,9 +1,10 @@
+//this goes on line 29 <button onclick="addToSaves(${this.#filteredList[i][1]})" style="color:#d57146;font-size:1.5em">+</button>
 class Resources {
   #filteredList;
   #rows;
   #filterOption;
 
-  constructor() {
+  constructor() { 
     const selectElement = document.getElementById("js-resource-filter");
     selectElement.addEventListener('change', () => {
       this.inputHtml()
@@ -19,13 +20,14 @@ class Resources {
           <div class="resource-link-pic-box">
             <img src=${this.#filteredList[i][2]} style="width:100%;height:100%;object-fit:cover;object-position:center">
           </div>
-          <div display:flex;align-content:space-around;height:100px>
-            <p style="font-size:20px;width:70%;margin:auto auto;text-align:center;font-weight:bold;"><a href=${this.#filteredList[i][1]}>${this.#filteredList[i][0]}</a></p>
+          <div style="display:flex;align-content:space-around;min-height:100px;background-color:#003e7a">
+            <p style="color:white;font-size:20px;width:70%;margin:auto auto;text-align:center;font-weight:bold;"><a href=${this.#filteredList[i][1]}>${this.#filteredList[i][0]}</a></p>
             <div style="float:right;margin-right:10px;">
-              <button style="border:2px solid white;color:#d57146;padding:5px;" onclick="fetch('/likes', { method:'POST', headers:{'Content-Type':'text/plain'}, body:'${this.#filteredList[i][1]}' }); alert('Liked ${this.#filteredList[i][0]}');">
-              &#128077;
+              <button style="color:#d57146;padding:5px;" onclick="fetch('/likes', { method:'POST', headers:{'Content-Type':'text/plain'}, body:'${this.#filteredList[i][1]}' }); alert('Liked ${this.#filteredList[i][0]}');">
+              &#10084;
               </button>
-              <span style="margin-top:5px;margin-right:10px;color:white">${resourceLikes[this.#filteredList[i][1]]}</span>
+              <span style="margin-top:5px;margin-right:10px;color:white;font-weight:bold;font-size:1.5em">${resourceLikes[this.#filteredList[i][1]]}</span>
+              
             </div>
           </div>
         </div>
