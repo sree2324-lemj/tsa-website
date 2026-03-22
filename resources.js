@@ -13,6 +13,7 @@ class Resources {
   async inputHtml() {
     await this.#filterResources();
     let resourceLikes = await this.#getLikes();
+    console.log(resourceLikes);
     let resourceGrid = ``
     for (let i=0;i<this.#filteredList.length;i++) {
       resourceGrid += `
