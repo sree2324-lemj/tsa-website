@@ -34,7 +34,7 @@ app.post('/likes', (req,res) => {
     const filePath = path.join(__dirname, 'resource_likes.json');
     fs.readFile(filePath, 'utf8', (err, data) => {
         if (err) return res.status(500).send('Error reading file');
-        likesData = JSON.parse(data);
+        const likesData = JSON.parse(data);
         if (likesData[resourceName]) {
             likesData[resourceName] += 1; 
         } 
