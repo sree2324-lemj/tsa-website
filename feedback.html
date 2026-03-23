@@ -33,7 +33,7 @@
         <button class="submit-button" id="js-submit-button">Submit</button>
       </div>
 
-      <div style="width:30%;padding:100px 100px;border-left:2px solid #d57146">
+      <div style="width:30%;padding:50px 50px;border-left:7px solid #d57146;margin-top:50px">
         <p class="subheader">Other Reviews</p>
         <div id="js-reviews-section">
           
@@ -46,6 +46,7 @@
     </footer>
   <script>
     let rating;
+    viewFeedback()
     const buttonElement = document.getElementById('js-submit-button');
     buttonElement.addEventListener('click', () => {
       getFeedback();
@@ -102,8 +103,9 @@
             <span style="font-size:35px;color:white;-webkit-text-stroke:2px #d57146>${openStars}</span>
             <p style="font-size:16px">"${reviews[i][1]}"</p>
           </div>
-        `
-      } 
+        `;
+      }
+      reviewSectionElement.innerHTML = reviewsGrid;
 
     }
     
