@@ -203,6 +203,9 @@ a:hover{
     height:50%;
     shape-outside: radial-gradient(ellipse at bottom left, transparent 0%, black 100%)
 }
+button {
+    cursor:pointer
+}
 
 
 
