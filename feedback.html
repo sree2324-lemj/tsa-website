@@ -17,19 +17,29 @@
             <li><a href="search.html">Search</a></li>
         </ul>
     </header>
-    <div style="padding:100px 100px;width:60%">
-      <p style="font-size:64px;font-family:Merriweather;font-weight:bold">Feedback</p>
-      <p style="width:100%">We would love to hear your review of our webstie. Rate the website out of 5 stars and then leave your feedback. Cary is a rich community with many resources that aren't listed on this website so we are ready to implement the resources you recommend. We are also seeking out any of your suggestions on the website infrastructure.</p>
-      
-      <span id="0" onclick="Rate(1)" style="font-size:50px;color:white;-webkit-text-stroke:2px #d57146;cursor:pointer">&#9733;</span>
-      <span id="1" onclick="Rate(2)" style="font-size:50px;color:white;-webkit-text-stroke:2px #d57146;cursor:pointer">&#9733;</span>
-      <span id="2" onclick="Rate(3)" style="font-size:50px;color:white;-webkit-text-stroke:2px #d57146;cursor:pointer">&#9733;</span>
-      <span id="3" onclick="Rate(4)" style="font-size:50px;color:white;-webkit-text-stroke:2px #d57146;cursor:pointer">&#9733;</span>
-      <span id="4" onclick="Rate(5)" style="font-size:50px;color:white;-webkit-text-stroke:2px #d57146;cursor:pointer">&#9733;</span>
-      
-      <textarea id="js-feedback" class="feedback-box" placeholder="Comments..."></textarea>
-      <button class="submit-button" id="js-submit-button">Submit</button>
-      
+    <div style="display:flex;justify-content:space-between">
+
+      <div style="padding:100px 100px;width:60%">
+        <p style="font-size:64px;font-family:Merriweather;font-weight:bold">Feedback</p>
+        <p style="width:100%">We would love to hear your review of our webstie. Rate the website out of 5 stars and then leave your feedback. Cary is a rich community with many resources that aren't listed on this website so we are ready to implement the resources you recommend. We are also seeking out any of your suggestions on the website infrastructure.</p>
+        
+        <span id="0" onclick="Rate(1)" style="font-size:50px;color:white;-webkit-text-stroke:2px #d57146;cursor:pointer">&#9733;</span>
+        <span id="1" onclick="Rate(2)" style="font-size:50px;color:white;-webkit-text-stroke:2px #d57146;cursor:pointer">&#9733;</span>
+        <span id="2" onclick="Rate(3)" style="font-size:50px;color:white;-webkit-text-stroke:2px #d57146;cursor:pointer">&#9733;</span>
+        <span id="3" onclick="Rate(4)" style="font-size:50px;color:white;-webkit-text-stroke:2px #d57146;cursor:pointer">&#9733;</span>
+        <span id="4" onclick="Rate(5)" style="font-size:50px;color:white;-webkit-text-stroke:2px #d57146;cursor:pointer">&#9733;</span>
+        
+        <textarea id="js-feedback" class="feedback-box" placeholder="Comments..."></textarea>
+        <button class="submit-button" id="js-submit-button">Submit</button>
+      </div>
+
+      <div style="width:30%;padding:100px 100px;border-left:2px solid #d57146">
+        <p class="subheader">Other Reviews</p>
+        <div id="js-reviews-section">
+          
+        </div>
+      </div>
+
     </div>
     <footer>
       2025 Green Level High TSA Chapter 25-26
@@ -74,6 +84,27 @@
         'Content-Type':'text/plain',
         body:`${rating},${feedback}`
       });
+    }
+
+    async function viewFeedback() {
+      const response = await fetch("feedback.txt");
+      const data = await response.text();
+      const reviews = data.split('\n').map(row=>row.split(',')).slice(0,-1);
+      const reviewSectionElement = document.getElementById("js-reviews-section");
+      //"&#9733;"
+      let reviewsGrid = ``;
+      for (let i=0;i<reviews.length;i++) {
+        const closedStars = "&#9733;".repeat(Number(reviews[i][0]));
+        const openStars = "&#9733;".repeat(5-Number(reviews[i][0]));
+        reviewsGrid+= `
+          <div style="margin:30px;border-bottom:2px solid #d57146">
+            <span style="font-size:35px;color:#d57146;-webkit-text-stroke:2px #d57146>${closedStars}</span>
+            <span style="font-size:35px;color:white;-webkit-text-stroke:2px #d57146>${openStars}</span>
+            <p style="font-size:16px">"${reviews[i][1]}"</p>
+          </div>
+        `
+      } 
+
     }
     
   </script>
