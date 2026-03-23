@@ -9,41 +9,47 @@
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="main-header">
-        <h1 class="logo"><a class="no-hover" href="index.html">CARY RESOURCE HUB</a></h1>
-        <ul>
-            <li><a href="resources.html">Resources</a></li>
-            <li><a href="feedback.html" style="color:#d57146">Feedback</a></li>
-            <li><a href="search.html">Search</a></li>
-        </ul>
-    </header>
-    <div style="display:flex;justify-content:space-between">
+  <header class="main-header">
+      <h1 class="logo"><a class="no-hover" href="index.html">CARY RESOURCE HUB</a></h1>
+      <ul>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="feedback.html" style="color:#d57146">Feedback</a></li>
+          <li><a href="search.html">Search</a></li>
+      </ul>
+  </header>
+  <div style="display:flex;justify-content:space-between">
 
-      <div style="padding:100px 100px;width:60%">
-        <p style="font-size:64px;font-family:Merriweather;font-weight:bold">Feedback</p>
-        <p style="width:100%">We would love to hear your review of our webstie. Rate the website out of 5 stars and then leave your feedback. Cary is a rich community with many resources that aren't listed on this website so we are ready to implement the resources you recommend. We are also seeking out any of your suggestions on the website infrastructure.</p>
-        
-        <span id="0" onclick="Rate(1)" style="font-size:50px;color:white;-webkit-text-stroke:2px #d57146;cursor:pointer">&#9733;</span>
-        <span id="1" onclick="Rate(2)" style="font-size:50px;color:white;-webkit-text-stroke:2px #d57146;cursor:pointer">&#9733;</span>
-        <span id="2" onclick="Rate(3)" style="font-size:50px;color:white;-webkit-text-stroke:2px #d57146;cursor:pointer">&#9733;</span>
-        <span id="3" onclick="Rate(4)" style="font-size:50px;color:white;-webkit-text-stroke:2px #d57146;cursor:pointer">&#9733;</span>
-        <span id="4" onclick="Rate(5)" style="font-size:50px;color:white;-webkit-text-stroke:2px #d57146;cursor:pointer">&#9733;</span>
-        
-        <textarea id="js-feedback" class="feedback-box" placeholder="Comments..."></textarea>
-        <button class="submit-button" id="js-submit-button">Submit</button>
-      </div>
-
-      <div style="width:30%;padding:50px 50px;border-left:7px solid #d57146;margin-top:50px">
-        <p class="subheader">Other Reviews</p>
-        <div id="js-reviews-section">
-          
-        </div>
-      </div>
-
+    <div style="padding:100px 100px;width:60%">
+      <p style="font-size:64px;font-family:Merriweather;font-weight:bold">Feedback</p>
+      <p style="width:100%">We would love to hear your review of our webstie. Rate the website out of 5 stars and then leave your feedback. Cary is a rich community with many resources that aren't listed on this website so we are ready to implement the resources you recommend. We are also seeking out any of your suggestions on the website infrastructure.</p>
+      
+      <span id="0" onclick="Rate(1)" style="font-size:50px;color:white;-webkit-text-stroke:2px #d57146;cursor:pointer">&#9733;</span>
+      <span id="1" onclick="Rate(2)" style="font-size:50px;color:white;-webkit-text-stroke:2px #d57146;cursor:pointer">&#9733;</span>
+      <span id="2" onclick="Rate(3)" style="font-size:50px;color:white;-webkit-text-stroke:2px #d57146;cursor:pointer">&#9733;</span>
+      <span id="3" onclick="Rate(4)" style="font-size:50px;color:white;-webkit-text-stroke:2px #d57146;cursor:pointer">&#9733;</span>
+      <span id="4" onclick="Rate(5)" style="font-size:50px;color:white;-webkit-text-stroke:2px #d57146;cursor:pointer">&#9733;</span>
+      
+      <textarea id="js-feedback" class="feedback-box" placeholder="Comments..."></textarea>
+      <button class="submit-button" id="js-submit-button">Submit</button>
     </div>
-    <footer>
-      2025 Green Level High TSA Chapter 25-26
-    </footer>
+
+    <div style="width:30%;padding:50px 50px;border-left:7px solid #d57146;margin-top:50px">
+      <p class="subheader">Other Reviews</p>
+      <div id="js-reviews-section">
+        
+      </div>
+    </div>
+
+  </div>
+  <footer style="display:flex;align-content:center;justify-content:space-between">
+    <p style="color:white;margin:0;line-height:1.2;font-size:16px">Cary Comunity Resource Hub</p>
+    <div>
+        <p style="color:white;margin:0;line-height:1.2;font-size:16px"><a href="reference-page.html">Reference Page</a></p>
+        <p style="color:white;margin:0;line-height:1.2;font-size:16px"><a href="resources.html">Resources</a></p>
+        <p style="color:white;margin:0;line-height:1.2;font-size:16px"><a href="search.html">Searh Portal</a></p>
+        <p style="color:white;margin:0;line-height:1.2;font-size:16px"><a href="feedback.html">Feedback</a></p>
+    </div>
+  </footer>
   <script>
     let rating;
     viewFeedback()
