@@ -106,7 +106,7 @@ a:hover{
 .feedback-box{
     border:3px solid #d57146;
     width:100%;
-    min-height: 200px; /* Optional: Sets a minimum visible height */
+    min-height: 200px; /* Sets a minimum visible height */
     resize:vertical;  /* Hides the scrollbar unless max-height is reached */
     color:#898a8d;
     font-size:20px;
